@@ -2,14 +2,14 @@
 %define upstream_version 0.04
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Create and validate Captcha for Catalyst
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Catalyst/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Catalyst-Plugin-Captcha
+Source0:	https://cpan.metacpan.org/authors/id/D/DI/DIEGOK/Catalyst-Plugin-Captcha-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
