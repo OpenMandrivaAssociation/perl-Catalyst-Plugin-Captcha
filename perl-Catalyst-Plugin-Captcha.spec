@@ -1,15 +1,13 @@
 %define upstream_name    Catalyst-Plugin-Captcha
-%define upstream_version 0.04
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.04
+Release:	7
 
 Summary:	Create and validate Captcha for Catalyst
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Catalyst-Plugin-Captcha
-Source0:	https://cpan.metacpan.org/authors/id/D/DI/DIEGOK/Catalyst-Plugin-Captcha-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DI/DIEGOK/Catalyst-Plugin-Captcha-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -26,7 +24,7 @@ Note: This plugin uses GD::SecurityImage and requires a session
 plugins like Catalyst::Plugin::Session
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
